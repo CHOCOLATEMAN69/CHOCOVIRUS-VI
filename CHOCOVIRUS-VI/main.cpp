@@ -3,5 +3,6 @@
 
 int main()
 {
-
+  std::cout << "FUCK";
+  return 69;
 }
