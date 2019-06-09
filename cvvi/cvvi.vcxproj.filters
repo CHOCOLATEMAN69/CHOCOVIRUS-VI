@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\CHOCOVIRUS">
+      <UniqueIdentifier>{b7a74583-99d1-4c66-94a3-685936d2da76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Blitz Framework">
+      <UniqueIdentifier>{01dbbf77-75b4-4946-b8f6-b9486b72c317}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PayloadMan.c">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="RegUtil.c">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\filecomment.c">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files\CHOCOVIRUS</Filter>
+    </ClCompile>
+    <ClCompile Include="ResFuckPayload.c">
+      <Filter>Source Files\CHOCOVIRUS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PayloadMan.h">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="RegUtil.h">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ResFuckPayload.h">
+      <Filter>Source Files\CHOCOVIRUS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile">
+      <Filter>Source Files\Blitz Framework</Filter>
+    </None>
+  </ItemGroup>
+</Project>

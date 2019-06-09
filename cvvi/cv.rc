@@ -1,0 +1,27 @@
+// This whole thing is placeholder:tm:
+10 ICON "choco.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "Choco Inc."
+      VALUE "FileDescription", "Taste the chocolatey goodness, this time darker!"
+      VALUE "FileVersion", "1.0.0"
+      VALUE "InternalName", "CHOCOVIRUS VI"
+      VALUE "LegalCopyright", "CHOCOLATEMAN"
+      VALUE "LegalTrademarks", "Copyright © 2019 by Choco Inc. CHOCO, CHOCOVIRUS, and CHOCOLATEMAN are trademarks registered to Choco Inc."
+      VALUE "OriginalFilename", "ITSOVER.exe"
+      VALUE "ProductName", "CHOCOVIRUS VI"
+      VALUE "ProductVersion", "1.0.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END
