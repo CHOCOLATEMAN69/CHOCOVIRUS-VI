@@ -113,6 +113,8 @@
     <ClCompile Include="ResFuckPayload.c" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="build.cmd" />
+    <None Include="build.sh" />
     <None Include="Makefile" />
   </ItemGroup>
   <ItemGroup>

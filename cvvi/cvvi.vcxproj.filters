@@ -11,6 +11,9 @@
     <Filter Include="Source Files\Blitz Framework">
       <UniqueIdentifier>{01dbbf77-75b4-4946-b8f6-b9486b72c317}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Build Tooling">
+      <UniqueIdentifier>{be132498-93cf-437c-996e-75e2c0ebd41b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PayloadMan.c">
@@ -44,8 +47,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <None Include="build.cmd">
+      <Filter>Source Files\Build Tooling</Filter>
+    </None>
+    <None Include="build.sh">
+      <Filter>Source Files\Build Tooling</Filter>
+    </None>
     <None Include="Makefile">
-      <Filter>Source Files\Blitz Framework</Filter>
+      <Filter>Source Files\Build Tooling</Filter>
     </None>
   </ItemGroup>
 </Project>
