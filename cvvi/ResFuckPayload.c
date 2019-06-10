@@ -15,17 +15,19 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Custom display mode struct
+// Display resolution data.
 typedef struct {
 	DWORD height, width, bits, rotation, hz;
 } ResFuckDisplayMode;
 
 DEVMODE devmode;
 
-// Array of all display modes that are valid
+// Count of items in the AllModes dynamic array.
 int AllModesCount;
+// Dynamic array of all display modes that are valid
 ResFuckDisplayMode* AllModes;
 
+// 
 float x = 1.0f;
 
 BOOL Cond_ResFuck(void* This) {
@@ -33,12 +35,10 @@ BOOL Cond_ResFuck(void* This) {
 }
 
 void Init_ResFuck(void* This) {
-	Sleep(10000);
 	AllModesCount = 5;
-	AllModes = calloc(5, sizeof(ResFuckDisplayMode));
+	AllModes = calloc(AllModesCount, sizeof(ResFuckDisplayMode));
 	devmode.dmSize = sizeof(DEVMODE);
 	for (int i = 0; EnumDisplaySettings(NULL, i, &devmode); ++i) {
-
 		if (i > AllModesCount) {
 			// Reallocate array if it's too small
 			AllModesCount = i;
@@ -57,10 +57,9 @@ void Init_ResFuck(void* This) {
 }
 
 void Work_ResFuck(void* This) {
-	// Randomly switch between the supported modes we collected.
-	int index = rand() % AllModesCount;
-	ResFuckDisplayMode dm = AllModes[index];
+	ResFuckDisplayMode dm = AllModes[rand() % AllModesCount];
 
+	// Make a new mode with the data from the mode we selected.
 	DEVMODE mode = devmode;
 	mode.dmPelsHeight = dm.height;
 	mode.dmPelsWidth = dm.width;
@@ -69,7 +68,6 @@ void Work_ResFuck(void* This) {
 
 	BLITZ_DEBUG_LOG("Changing current mode to %d (%lu x %lu)", index, dm.width, dm.height)
 	ChangeDisplaySettings(&mode, CDS_UPDATEREGISTRY|CDS_GLOBAL);
-	// stolen from CHOCOVIRUS V
 	Sleep(pow(0.95, x++) * 10000);
 }
 

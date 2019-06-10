@@ -3,15 +3,16 @@
 // (C) 2019 modeco80 and CHOCOLATEMAN.
 //
 // File:
-//		ResFuckPayload.h
+//		sample.c
 //
 // Description:
-//		Resolution fuck payload (extern reference header)
+//		Sample payload (extern reference header)
 //
+
 #pragma once
 
 #include "Common.h"
 #include "PayloadMan.h"
 #include "RegUtil.h"
 
-extern BlitzPayload ResFuck;
+extern BlitzPayload Sample;
