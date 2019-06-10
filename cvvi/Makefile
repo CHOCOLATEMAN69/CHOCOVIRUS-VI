@@ -36,7 +36,7 @@ else
 CCFLAGS = -fno-ident -fno-stack-protector -funroll-loops -fomit-frame-pointer -fno-unwind-tables -fno-asynchronous-unwind-tables -msse -masm=intel -Wall -Os
 endif
 
-LD = $(CC) -mwindows -s -lmingw32 -lmingwex -lgcc -lmsvcrt-os
+LD = $(CC) -mwindows -s -lmingw32 -lmingwex -lgcc -lmsvcrt
 USERLIBS = -lkernel32 -luser32
 
 .PHONY: all clean

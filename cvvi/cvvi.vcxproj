@@ -109,6 +109,7 @@
     <ClCompile Include="..\filecomment.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="PayloadMan.c" />
+    <ClCompile Include="persistence.c" />
     <ClCompile Include="RegUtil.c" />
     <ClCompile Include="ResFuckPayload.c" />
   </ItemGroup>

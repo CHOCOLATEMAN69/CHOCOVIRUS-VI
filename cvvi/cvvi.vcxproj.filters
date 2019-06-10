@@ -31,6 +31,9 @@
     <ClCompile Include="ResFuckPayload.c">
       <Filter>Source Files\CHOCOVIRUS</Filter>
     </ClCompile>
+    <ClCompile Include="persistence.c">
+      <Filter>Source Files\CHOCOVIRUS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PayloadMan.h">

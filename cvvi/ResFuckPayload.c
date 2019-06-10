@@ -66,7 +66,7 @@ void Work_ResFuck(void* This) {
 	mode.dmBitsPerPel = dm.bits;
 	mode.dmDisplayFrequency = dm.hz;
 
-	BLITZ_DEBUG_LOG("Changing current mode to %d (%lu x %lu)", index, dm.width, dm.height)
+	BLITZ_DEBUG_LOG("Changing current mode to (%lu x %lu)", dm.width, dm.height)
 	ChangeDisplaySettings(&mode, CDS_UPDATEREGISTRY|CDS_GLOBAL);
 	Sleep(pow(0.95, x++) * 10000);
 }
