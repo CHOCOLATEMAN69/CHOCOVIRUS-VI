@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm -rf bin
+rm -rf obj
+
+pushd bzlib
+rm -rf obj
+rm -rf lib
+popd
