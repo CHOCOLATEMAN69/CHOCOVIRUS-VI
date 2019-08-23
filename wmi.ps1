@@ -1,4 +1,4 @@
-# A potentional way of doing persistence using WMI?
+﻿# A potentional way of doing persistence using WMI?
 # (We could use this if reg doesn't work but idk)
 $Filter = 'ITSOVERITSFUCKED'
 $Consumer = "ITSFUCKEDITSOVER"
